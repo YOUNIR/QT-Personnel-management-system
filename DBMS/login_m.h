@@ -21,14 +21,8 @@ public:
     ~login_m();
 
 private slots:
-    void on_return_Button_clicked();
 
     void on_return_Button_2_clicked();
-
-    void on_user_Button_3_clicked();
-
-    void returnToMain();
-
 private:
     Ui::login_m *ui;
     QSqlDatabase db;

@@ -43,10 +43,10 @@ void person_data_maintenance::on_return_Button_clicked()
 
 void person_data_maintenance::on_delete_Button_clicked()
 {
-    QString name=ui->namelineEdit_2->text();
+    QString id=ui->namelineEdit_2->text();
     QSqlQuery query(db);
-    query.prepare("DELETE FROM employee WHERE name = :name");
-    query.bindValue(":name", name);
+    query.prepare("DELETE FROM employee WHERE id = :id");
+    query.bindValue(":id", id);
 
     if (query.exec()) {
         QMessageBox::information(this, "删除提示", "成功删除");

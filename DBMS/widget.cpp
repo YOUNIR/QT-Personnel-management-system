@@ -1,23 +1,12 @@
 #include "widget.h"
 #include "ui_widget.h"
 
-Widget::Widget(QWidget *parent)
+Widget::Widget(QSqlDatabase d,QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    //连接数据库
-    db=QSqlDatabase::addDatabase("QODBC");  //加载MySQL数据库驱动
-    db.setDatabaseName("xc");
-    db.setHostName("localhost");
-    db.setUserName("root");
-    db.setPassword("Luozhen924");
-    if(db.open()){
-        QMessageBox::information(this,"连接提示","连接成功");
-    }
-    else{
-        QMessageBox::warning(this,"连接提示","连接失败");
-    }
+    db=d;
 }
 
 Widget::~Widget()
@@ -28,7 +17,7 @@ Widget::~Widget()
 void Widget::on_person_m_clicked()
 {
     this->hide();
-    p=new Person_m(NULL);
+    p=new Person_m(db);
     connect(p,&Person_m::returnToMainWindow,this,&Widget::returnToMain);
     p->show();
 }
@@ -60,15 +49,10 @@ void Widget::returnToMain2(){
     d->hide();
     this->show();
 }
-
 void Widget::on_login_m_clicked()
 {
-    this->hide();
-    l=new login_m(db);
-    connect(l,&login_m::returnToMainWindow,this,&Widget::returnToMain3);
+    login_m* l=new login_m(db);
+    this->close();
     l->show();
 }
-void Widget::returnToMain3(){
-    l->hide();
-    this->show();
-}
+

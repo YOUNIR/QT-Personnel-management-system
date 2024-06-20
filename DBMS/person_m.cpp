@@ -1,23 +1,12 @@
 #include "person_m.h"
 #include "ui_person_m.h"
 
-Person_m::Person_m(QWidget *parent) :
+Person_m::Person_m(QSqlDatabase d,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Person_m)
 {
     ui->setupUi(this);
-    //连接数据库
-    db=QSqlDatabase::addDatabase("QODBC");  //加载MySQL数据库驱动
-    db.setDatabaseName("xc");
-    db.setHostName("localhost");
-    db.setUserName("root");
-    db.setPassword("Luozhen924");
-    if(db.open()){
-        QMessageBox::information(this,"连接提示","连接成功");
-    }
-    else{
-        QMessageBox::warning(this,"连接提示","连接失败");
-    }
+    db=d;
 }
 
 Person_m::~Person_m()

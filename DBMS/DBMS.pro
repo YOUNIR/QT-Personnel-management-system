@@ -10,36 +10,41 @@ CONFIG += c++17
 
 SOURCES += \
     depart_m.cpp \
-    login_m.cpp \
+    user.cpp \
+    widget.cpp \
     main.cpp \
     person_data_maintenance.cpp \
     person_data_query.cpp \
     person_m.cpp \
     salary_m.cpp \
     user_v.cpp \
-    widget.cpp
-
+    login_m.cpp
 HEADERS += \
     depart_m.h \
-    login_m.h \
+    user.h \
+    widget.h \
     person_data_maintenance.h \
     person_data_query.h \
     person_m.h \
     salary_m.h \
     user_v.h \
-    widget.h
+    login_m.h
 
 FORMS += \
     depart_m.ui \
-    login_m.ui \
+    user.ui \
+    widget.ui \
     person_data_maintenance.ui \
     person_data_query.ui \
     person_m.ui \
     salary_m.ui \
     user_v.ui \
-    widget.ui
+    login_m.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    rec.qrc

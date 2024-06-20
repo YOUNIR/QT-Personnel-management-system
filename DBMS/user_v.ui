@@ -13,51 +13,78 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="query_Button">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>340</y>
-     <width>101</width>
-     <height>41</height>
+     <x>-20</x>
+     <y>-10</y>
+     <width>721</width>
+     <height>501</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
+   <property name="styleSheet">
+    <string notr="true">#frame{
+border-image: url(:/root_view.jpg);
+}</string>
    </property>
-   <property name="text">
-    <string>查询</string>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
    </property>
-  </widget>
-  <widget class="QTableView" name="tableView">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>641</width>
-     <height>281</height>
-    </rect>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
-  </widget>
-  <widget class="QPushButton" name="return_Button">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>400</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>返回</string>
-   </property>
+   <widget class="QPushButton" name="return_Button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>430</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(124,192,241);</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>641</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="query_Button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>360</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(124,192,241);</string>
+    </property>
+    <property name="text">
+     <string>查询</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>2c2f44b5a19ae8750e9b4af3aed2dabd.jpg</file>
+        <file>6b84fe33a7b2d46a92ba358bcc9a2fe0.jpg</file>
+        <file>7bbd29e1da465589d25eae0ff0deceee.jpg</file>
+        <file>488faf6c4b42cc2181d05e0824ff4a03.jpg</file>
+        <file>626bf81c2340880a77ce57d3098dbdbd.jpg</file>
+        <file>797a31987903c207ad35d9e532b6e65a.jpg</file>
+        <file>058615e8030122dbfcc7e9583ec02b5c.jpg</file>
+        <file>c6324d78ead3b64937fa83b010e4bf10.jpg</file>
+        <file>da3d639cc3fd4da785eb1a8bcb8764e7.jpg</file>
+        <file>edf937b68700773e778ac0de57c3b5a3.jpg</file>
+        <file>root_view.jpg</file>
+        <file>user_view.jpg</file>
+    </qresource>
+</RCC>

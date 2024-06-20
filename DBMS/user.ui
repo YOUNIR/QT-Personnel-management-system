@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>person_data_query</class>
- <widget class="QWidget" name="person_data_query">
+ <class>user</class>
+ <widget class="QWidget" name="user">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>578</width>
-    <height>522</height>
+    <width>582</width>
+    <height>452</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <pointsize>16</pointsize>
-   </font>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -21,15 +16,23 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>-10</x>
+     <x>0</x>
      <y>-10</y>
      <width>591</width>
-     <height>541</height>
+     <height>461</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
     <string notr="true">#frame{
-	border-image: url(:/root_view.jpg);
+border-image: url(:/user_view.jpg);
 }</string>
    </property>
    <property name="frameShape">
@@ -38,11 +41,58 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QPushButton" name="return_Button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>380</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(124,192,241);</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>60</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;用户界面&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>521</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>400</y>
+      <x>230</x>
+      <y>300</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -57,37 +107,6 @@
     </property>
     <property name="text">
      <string>查询</string>
-    </property>
-   </widget>
-   <widget class="QTableView" name="tableView">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>551</width>
-      <height>341</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>450</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(124,192,241);</string>
-    </property>
-    <property name="text">
-     <string>返回</string>
     </property>
    </widget>
   </widget>

@@ -17,7 +17,7 @@ class Person_m : public QWidget
     Q_OBJECT
 
 public:
-    explicit Person_m(QWidget *parent = nullptr);
+    explicit Person_m(QSqlDatabase d,QWidget *parent = nullptr);
     ~Person_m();
 signals:
     void returnToMainWindow(); // 定义返回主窗口的信号

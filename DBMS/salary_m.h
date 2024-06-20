@@ -23,6 +23,8 @@ private slots:
 
     void on_return_Button_clicked();
 
+    void on_save_Button_2_clicked();
+
 private:
     Ui::salary_m *ui;
     QSqlDatabase db;

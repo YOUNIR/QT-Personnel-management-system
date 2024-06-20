@@ -13,127 +13,115 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="return_Button">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>390</y>
-     <width>101</width>
-     <height>41</height>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>481</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
+   <property name="styleSheet">
+    <string notr="true">#frame{
+border-image: url(:/root_view.jpg);
+}</string>
    </property>
-   <property name="text">
-    <string>返回</string>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
    </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>230</y>
-     <width>101</width>
-     <height>61</height>
-    </rect>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
-   <property name="font">
-    <font>
-     <family>楷体</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;密码：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="passwardlineEdit">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>230</y>
-     <width>161</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="namelineEdit">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>160</y>
-     <width>161</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>170</y>
-     <width>131</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>楷体</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;用户名：&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="return_Button_2">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>320</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>登录</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="user_Button_3">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>390</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>用户</string>
-   </property>
+   <widget class="QPushButton" name="return_Button_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>320</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140,199,239);</string>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>140</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;用户名：&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="namelineEdit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwardlineEdit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>210</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>210</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;密码：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
