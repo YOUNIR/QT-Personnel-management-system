@@ -1,5 +1,5 @@
 # QT-Personnel-management-system
-基于QT实现的人事管理系统（期末大作业）
+基于QT实现的数据库人事管理系统（期末大作业）
 
 
 
