@@ -25,6 +25,10 @@ private slots:
 
     void on_query_Button_clicked();
 
+    void on_query_Button_2_clicked();
+
+    void on_dept_Button_clicked();
+
 private:
     Ui::depart_m *ui;
     QSqlQueryModel * m;

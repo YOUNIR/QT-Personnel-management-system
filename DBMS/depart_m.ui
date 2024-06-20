@@ -41,7 +41,7 @@ border-image: url(:/root_view.jpg);
    <widget class="QPushButton" name="query_Button">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>220</x>
       <y>440</y>
       <width>101</width>
       <height>41</height>
@@ -134,6 +134,48 @@ border-image: url(:/root_view.jpg);
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="query_Button_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>440</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(124,192,241);</string>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dept_Button">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>510</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(124,192,241);</string>
+    </property>
+    <property name="text">
+     <string>部门表</string>
     </property>
    </widget>
   </widget>

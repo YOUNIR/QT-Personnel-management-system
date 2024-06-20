@@ -1,6 +1,7 @@
 #include "depart_m.h"
 #include "ui_depart_m.h"
-
+#include "dept_v.h"
+#include "widget.h"
 depart_m::depart_m(QSqlDatabase d, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::depart_m)
@@ -17,7 +18,9 @@ depart_m::~depart_m()
 
 void depart_m::on_return_Button_clicked()
 {
-    emit returnToMainWindow(); // 发射返回主窗口的信号
+    Widget* w=new Widget(db);
+    this->close();
+    w->show();
 }
 
 
@@ -36,19 +39,23 @@ void depart_m::on_query_Button_clicked()
     }
 }
 
+void depart_m::on_query_Button_2_clicked()
+{
+    QString name=ui->dapartmentlineEdit->text();
+    QSqlQuery query(db);
+    query.prepare("delete from department where name = :name");
+    query.bindValue(":name", name);
+    if (query.exec()) {
+        QMessageBox::information(this, "删除提示", "成功删除");
+    } else {
+        QMessageBox::warning(this, "删除提示", "删除失败: ");
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+void depart_m::on_dept_Button_clicked()
+{
+    dept_v* d=new dept_v(db);
+    this->close();
+    d->show();
+}
 

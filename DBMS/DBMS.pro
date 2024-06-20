@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     depart_m.cpp \
+    dept_v.cpp \
     user.cpp \
     widget.cpp \
     main.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
     login_m.cpp
 HEADERS += \
     depart_m.h \
+    dept_v.h \
     user.h \
     widget.h \
     person_data_maintenance.h \
@@ -32,6 +34,7 @@ HEADERS += \
 
 FORMS += \
     depart_m.ui \
+    dept_v.ui \
     user.ui \
     widget.ui \
     person_data_maintenance.ui \
